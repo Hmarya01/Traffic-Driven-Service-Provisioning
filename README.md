@@ -1,5 +1,5 @@
 # Uncertainty Quantification and Consideration in ML-aided Traffic-Driven Service Provisioning
-In this work we examines deep quantile regression for Quality of Transmission (QoT) estimation and accurate decision making in optical networks. Also, we have investiagted  prediction intervals for QoT related decision making. we adopt a deep quantile regression framework. In this framework, Deep Neural Networks (DNNs) are trained to estimate conditional quantile functions (i.e., models).
+
 
 ## Python Script
 
