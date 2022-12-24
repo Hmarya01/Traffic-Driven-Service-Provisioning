@@ -1,6 +1,6 @@
 """Data loader.
 
-Author: Jinsung Yoon, edited by Tania Panayiotou
+Author: Jinsung Yoon, edited by Hafsa Maryam
 
 ----------------------------------------
 Loads Abilene bit-rate dataset with MinMax normalization.
