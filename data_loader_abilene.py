@@ -27,11 +27,11 @@ def data_loader(train_rate, seq_len, source):
   """
 
   # Load data
-  ori_data = np.loadtxt('source_data_abilene.csv', delimiter=',', skiprows = 1) #('source_data_geant.csv') for Geant
+  ori_data = np.loadtxt('source_data_geant.csv', delimiter=',', skiprows = 1) #('source_data_geant.csv') for Geant
   # Reverse the time order
   #reverse_data = ori_data[::-1]
-  source_data_temp=ori_data[range(0,6*800),source] # (0,6*133) for Geant
-  source_data_temp=np.asarray(source_data_temp).reshape(800,6) # (133,6) for Geant
+  source_data_temp=ori_data[range(0,6*133),source] # (0,6*133) for Geant
+  source_data_temp=np.asarray(source_data_temp).reshape(133,6) # (133,6) for Geant
   source_data=np.max(source_data_temp, axis=1) 
   # Normalization
   norm_data = MinMaxScaler(source_data_temp)
