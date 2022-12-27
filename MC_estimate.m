@@ -12,7 +12,7 @@ ecdf(y)
 index_estimates=find(f<=t); % find the indexes of all estimates for which their is a probability of less that t.
 
 mc_estimates=x(length(index_estimates));
-MC_estimate= max(mc_estimates). 
+MC_estimate= max(mc_estimates); 
 
 
 

@@ -108,7 +108,7 @@ def main (args):
          for i in range(0,len(test_y_hat)):
                          
                          validations_quantile  = eng.MC_estimate(matlab.double(pred_y_hats[i].tolist(), is_complex=True),matlab.double([threshold]))
-                         print(validations_quantile,"validations_quantile")
+                        
                          vvs.append(validations_quantile)
                          np.savetxt("MC_estimate.csv", vvs)
              
@@ -129,7 +129,7 @@ def main (args):
          for i in range(0,len(test_y_hat)):
                          
                          validations_quantile  = eng.MC_estimate(matlab.double(pred_y_hats[i].tolist(), is_complex=True),matlab.double([threshold]))
-                         print(validations_quantile,"validations_quantile")
+                         
                          vvs.append(validations_quantile)
                          np.savetxt("MC_estimate.csv", vvs)
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--task',
       choices=['classification','regression','montecarlo_regression'],
-      default='regression',
+      default='montecarlo_regression',
       type=str)
   parser.add_argument(  
       '--loss_function',
