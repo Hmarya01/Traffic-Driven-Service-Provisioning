@@ -14,13 +14,13 @@ It contains seven files, which are:
 
 * **data_loader.py** This file loads the Abilene/Geant bit-rate dataset and performs MinMax normalization.
 
-* **data_laoder_abilene.py** This file genrates the 800 for Abilene and 133 for Geant sequential (in time) traffic patterns and performs network reconfiguration k=6 fluctuations within each planning interval considering the input patterns.
+* **data_laoder_abilene.py** This file generates the 800 for Abilene and 133 for Geant sequential (in time) traffic patterns and performs network reconfiguration k=6 fluctuations within each planning interval considering the input patterns.
 
-* **basic_rnn_lst_gru.py** This files conatins the MC dropout inference fucntion and prediction model to generates the MSE loss fucntion.
+* **basic_rnn_lstm_gru.py** This files conatins the MC dropout inference fucntion and prediction model to generates the MSE loss fucntion.
 
 * **main_time_series_prediction.py** This file generates the estimates (i.e., prediction and MC estimates) for 0.90 and 0.95 certainty thresholds.  
 
-* **basic_attenstion.py** This file coantians are core functions.
+* **basic_attenstion.py** This file coantians all core functions.
 
 ## DNN Dataset
 
