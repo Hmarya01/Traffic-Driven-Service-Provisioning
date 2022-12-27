@@ -24,7 +24,13 @@ It contains seven files, which are:
 
 ## DNN Dataset
 
-The code folder conatinas two files are:
+The dataset folder conatinas two subfolders are:
+ **Abilene** This folder coantians two files are:
+* **Abilene** 
+
+* **Geant**
+
+
 * **qunatile_regression.py** This file contains the Python script and the code generates loss functions in deep quantile neural network to evaluate the error estimation and performance accuracy for 0.1 and 0.95 quantile QoT models.
 
 *  **least_squares_regression.py**  This file generates the MSE loss function to generate the estimate (i.e., prediction). 
