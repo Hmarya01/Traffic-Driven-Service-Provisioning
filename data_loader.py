@@ -29,7 +29,7 @@ def data_loader(train_rate, seq_len, source):
   ori_data = np.loadtxt('source_data_geant.csv', delimiter=',', skiprows = 1) #('source_data_geant.csv') for Geant
   # Reverse the time order
   #reverse_data = ori_data[::-1]
-  source_data=ori_data[range(0,2000),source] # (0,2000) for Geant
+  source_data=ori_data[range(0,4000),source] # (0,2000) for Geant
   # Normalization
   norm_data = MinMaxScaler(source_data)
     

@@ -153,7 +153,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--source',
       help='source node',
-      default=2,
+      default=0,
       type=int)
   parser.add_argument(
       '--model_type',
@@ -205,7 +205,7 @@ if __name__ == '__main__':
   parser.add_argument(  
       '--topology',
       choices=['abilene','geant'], # active if topology is chosen
-      default='geant',
+      default='abilene',
       type=str)
   args = parser.parse_args() 
   
