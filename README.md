@@ -1,12 +1,12 @@
 # Uncertainty Quantification and Consideration in ML-aided Traffic-Driven Service Provisioning
 
-In this work we examines traffic prediction uncertainty  by leverging the capabilites of Monte Carlo (MC) dropout inference for reoptimizing the network resources, provisioinig of services with diverse QoS requirements in optical networks. Also, we have investiagted predictive distribution of MC dropout inference to provide prediction under various certainty levels. we adopt a deep MC regression framework. In this framework, Deep Neural Networks (DNNs) are trained to estimate MC dropout inference function (i.e., models). Further, Extensive simulations are performed on real-world traffic traces from the Abilene and Geant network for calculating the spectrum savings. 
+In this work, we examine traffic prediction uncertainty  by leverging the capabilites of Monte Carlo (MC) dropout inference for reoptimizing the network resources, provisioinig of services with diverse QoS requirements in optical networks. Also, we have investiagted predictive distribution of MC dropout inference to provide prediction under various certainty levels. We adopt a deep MC regression framework. In this framework, Deep Neural Networks (DNNs) are trained to estimate MC dropout inference function (i.e., models). Further, simulations are performed on real-world traffic traces from the Abilene and Geant network for calculating the spectrum savings. 
 
 
 ## Python Script
 
 ## DNN Code Description
-The code folder conatinas seven files are:
+It contains seven files, which are:
 
 load_txt.py This file contains the Python script and the code creates the abilene/geant csv file (i.e., bit-rates along with the source nodes).
 
