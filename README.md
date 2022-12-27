@@ -6,7 +6,7 @@ In this work, we examine traffic prediction uncertainty  by leverging the capabi
 ## Python Script
 
 ## DNN Code Description
-It contains seven files, which are:
+It contains eight files, which are:
 
 * **load_txt.py** This file contains the Python script and the code creates the Abilene/Geant csv file (i.e., bit-rates along with the source nodes).
 
@@ -21,6 +21,8 @@ It contains seven files, which are:
 * **main_time_series_prediction.py** This file generates the estimates (i.e., prediction and MC estimates) for 0.90 and 0.95 certainty thresholds.  
 
 * **basic_attenstion.py** This file coantians all core functions.
+
+* **utils.py** This file coantians all core functions i.e., mse_loss function, predictive model performance for evaluation.
 
 ## DNN Dataset
 
