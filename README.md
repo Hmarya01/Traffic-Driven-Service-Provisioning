@@ -8,9 +8,9 @@ In this work, we examine traffic prediction uncertainty  by leverging the capabi
 ## DNN Code Description
 It contains seven files, which are:
 
-* **load_txt.py** This file contains the Python script and the code creates the abilene/geant csv file (i.e., bit-rates along with the source nodes).
+* **load_txt.py** This file contains the Python script and the code creates the Abilene/Geant csv file (i.e., bit-rates along with the source nodes).
 
-* **create_source_data.py** This file load the bit-rates and generates the bit-rates in Gbps of all source nodes for abilene/geant.
+* **create_source_data.py** This file load the bit-rates and generates the bit-rates in Gbps of all source nodes for Abilene/Geant.
 
 * **data_loader.py** This file loads the Abilene/Geant bit-rate dataset and performs MinMax normalization.
 
@@ -26,28 +26,17 @@ It contains seven files, which are:
 
 The dataset folder conatinas two subfolders are:
 
- **Abilene** This folder coantians two files are:
- 
-* **Abilene** 
+* **Abilene**  This folder coantians four files are:
+* output_abilene This csv file contains the source and bit-rates for Abilene.
+* source_data_abilene This csv file contains the bit-rates in Gbps for all nodes.
+* source This csv file contains all the source nodes.
+* destination This csv file contians all the destination nodes.
 
-* **Geant**
-
-
-* **qunatile_regression.py** This file contains the Python script and the code generates loss functions in deep quantile neural network to evaluate the error estimation and performance accuracy for 0.1 and 0.95 quantile QoT models.
-
-*  **least_squares_regression.py**  This file generates the MSE loss function to generate the estimate (i.e., prediction). 
-
-Each line is a vector v describing the features and the QoT value of a lightpath.  Specifically:
-v = [v_1, v_2, v_3, v_4, v_5, v_6, v_7],
-where
-* v_1: is the path length of the lightpath
-* v_2: is the number of hops (or links) of the lightpath
-* v_3: is the degree of the destination node of the lightpath 
-* v_4: is the maximum link length of the lightpath
-* v_5: is the wavelength allocated to the lightpath
-* v_6: is Q-factor of the lightpath
-
-Hence, v_1  to v_5 are the inputs of the DNN model, and v_6 is the output of the model. 
+* **Geant** This folder coantians four files are:
+* output_geant This csv file contains the source and bit-rates for Geant.
+* source_data_geant This csv file contains the bit-rates in Gbps for all nodes.
+* source This csv file contains all the source nodes.
+* destination This csv file contians all the destination nodes.
 
 
 ## Referecence
