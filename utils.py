@@ -1,7 +1,7 @@
 """Utility functions for time-series prediction.
 
-Author: Jinsung Yoon, edited Tania Panayiotou
-Contact: jsyoon0823@gmail.com
+Author: Jinsung Yoon, edited by Hafsa Maryam
+
 ------------------------------------
 (1) MinMaxScaler: MinMax normalizer
 (2) performance: performance evaluator
