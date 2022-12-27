@@ -26,7 +26,7 @@ It contains eight files, which are:
 
 ## DNN Dataset
 
-The dataset folder conatinas two subfolders are:
+The dataset folder contains two subfolders are:
 
 ### Abilene  
 This folder contains four files are:
