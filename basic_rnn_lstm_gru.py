@@ -174,7 +174,7 @@ class GeneralRNN():
     
     plt.plot(history.history['loss'],linestyle='dashed')
     plt.plot(history.history['val_loss'])
-    plt.ylabel('$L_{dropout}$ for v=1  regression ',fontsize='large') # write number according to the source nodes.
+    plt.ylabel('$L_{dropout}$ for v=1',fontsize='large') # write number according to the source nodes.
     plt.xlabel('Epochs',fontsize='large')
     plt.legend( ['Train', 'Validation'], loc='upper right',fontsize='large')
     plt.show()  
