@@ -59,7 +59,7 @@ This directory contains implementations of basic traffic prediction using RNN, G
 - topology: Abilene or Geant
 - threshold: Certainty threshold q value for (0.90 or 0.95) to find MC_estimate.
       
-  Afer cheking the above input commands, simply run the main file named "main_time_series_prediction.py" and see the (MSE/MC_estimate) with the loss fucntion for all the source nodes.    
+  Afer cheking the above input commands, simply run the main file named "main_time_series_prediction.py" and see the (prediction/MC_estimate) with the loss fucntion for all the source nodes.    
       
 ## Referecence
 
