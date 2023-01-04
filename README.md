@@ -34,14 +34,32 @@ This directory contains implementations of basic traffic prediction using RNN, G
 ## Code Example
 
 ## Steps of Traffic Prediction framework:
-**Step 1:** Load bit-rate dataset for Abilene/Geant network by simply running the *data_laoder.py*.
-     * **Abilene:** To load data (source_data_abilene), put range (0,4000) sequential (in time) traffic patterns.
-     * **Geant:** To load data (source_data_geant), put range (0,2000) sequential (in time) traffic patterns.0, 2000  sequential (in time) traffic patterns.
-     
-**Step 2:** Load bit-rate dataset per source node for Abilene/Geant network for testing and training by simply running the *data_laoder_abilene.py*.
-     * Abilene: 0,4000 sequential (in time) traffic patterns.
-     * Geant: 0, 2000  sequential (in time) traffic patterns.
+**Step 1:** Load bit-rate dataset for Abilene/Geant network by simply running the data_laoder.py.
 
+     * **Abilene:** To load data (source_data_abilene), put range (0,4000) sequential (in time) traffic patterns.
+     * **Geant:** To load data (source_data_geant), put range (0,2000) sequential (in time) traffic patterns.
+     
+**Step 2:** Load bit-rate dataset per source node for testing and training for Abilene/Geant network by simply running the data_laoder_abilene.py.
+
+      * **Abilene:** To load data (source_data_abilene), put range (0,6*800) sequential (in time) traffic patterns.
+     * **Geant:** To load data (source_data_geant), put range (0,6*133) sequential (in time) traffic patterns.
+     
+**Step 3:** After laoding the data, to train the model (RNN based: Simple RNN, GRU, LSTM) for the performance evaluation (MSE) in main_time_series_prediction.py file , following commands are important:
+    - train_rate: training data ratio
+    - seq_len: sequence length
+    - task: classification or regression(MSE) or montecarlo_regression(MC_estimate)
+    - model_type: rnn, lstm or gru - In traffic prediction framework only gru is used.
+    - h_dim: hidden state dimensions
+    - n_layer: number of layers
+    - batch_size: the number of samples in each mini-batch
+    - epoch: the number of iterations
+    - source: the number of source node for Abilene/ Geant -  as per demand of the network.
+    - learning_rate: learning rates
+    - topology: Abilene or Geant
+    - threshold: Certainty threshold q value for (0.90 or 0.95) to find MC_estimate.
+      
+  Afer cheking the above input commands, simply run the main file named "main_time_series_prediction.py" and see the (MSE/MC_estimate) with the loss fucntion for all the source nodes.    
+      
 ## Referecence
 
 ### We kindly ask that if you use our dataset or code,  please reference the following paper: 
