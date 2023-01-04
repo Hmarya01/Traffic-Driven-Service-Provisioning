@@ -7,7 +7,7 @@ In this work, we examine traffic prediction uncertainty  by leverging the capabi
 This directory contains implementations of basic traffic prediction using RNN, GRU, LSTM methods. To run the pipeline, simply run python3 -m main_time_series_prediction.py.
 
   ## DNN Code Description
-  It contains eight files, which are:
+  It contains five files, which are:
 
   * **data_loader.py** This file loads the Abilene/Geant bit-rate dataset and performs MinMax normalization.
 
@@ -16,7 +16,10 @@ This directory contains implementations of basic traffic prediction using RNN, G
   * **basic_rnn_lstm_gru.py** This files contains the MC dropout inference fucntion and prediction model to generates the MSE loss fucntion.
 
   * **main_time_series_prediction.py** This file generates the predictions for MSE and MC estimates for Monte Carlo dropout inference, 0.90 and 0.95 certainty           thresholds.  
-
+   
+   * **MC_estimate.m** This matlab file contains the fucntion to generate the MC estimates from the test patterns for 0.90 and 0.95 certainty thresholds.
+   
+   
   ## DNN Dataset
 
   The dataset folder contains two subfolders are:
