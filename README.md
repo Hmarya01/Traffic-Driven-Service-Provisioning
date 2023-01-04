@@ -22,12 +22,12 @@ This directory contains implementations of basic traffic prediction using RNN, G
   The dataset folder contains two subfolders are:
 
   ### Abilene  
-  This folder contains four files are:
+  This folder contains two files are:
   * **source_data_abilene** This csv file contains the bit-rates in Gbps for all nodes.
   * **source** This csv file contains all the source nodes.
 
   ### Geant 
-  This folder contains four files are:
+  This folder contains two files are:
   * **source_data_geant** This csv file contains the bit-rates in Gbps for all nodes.
   * **source** This csv file contains all the source nodes.
 
