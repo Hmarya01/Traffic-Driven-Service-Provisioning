@@ -1,6 +1,6 @@
 # Uncertainty Quantification and Consideration in ML-aided Traffic-Driven Service Provisioning
 
-In this work, we examine traffic prediction uncertainty  by leverging the capabilites of Monte Carlo (MC) dropout inference for reoptimizing the network resources, provisioinig of services with diverse QoS requirements in optical networks. Also, we have investiagted predictive distribution of MC dropout inference to provide prediction under various certainty levels. We adopt a deep MC regression framework. In this framework, Deep Neural Networks (DNNs) are trained to estimate MC dropout inference function (i.e., models). Further, simulations are performed on real-world traffic traces from the Abilene and Geant network for calculating the spectrum savings. 
+In this work, we examine traffic prediction uncertainty  by leverging the capabilites of Monte Carlo (MC) dropout inference for reoptimizing the network resources, provisioinig of services with diverse QoS requirements in optical networks. Also, we have investiagted predictive distribution of MC dropout inference to provide prediction under various certainty levels. We adopt a traffic predicition framework. In this framework, Deep Neural Networks (DNNs) are trained to estimate MC dropout inference function (i.e., models). Further, simulations are performed on real-world traffic traces from the Abilene and Geant network for calculating the spectrum savings. 
 
 
 ## Python Script
