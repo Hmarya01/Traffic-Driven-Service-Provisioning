@@ -48,7 +48,7 @@ This directory contains implementations of basic traffic prediction using RNN, G
 **Step 3:** After laoding the data, to train the model (RNN based: Simple RNN, GRU, LSTM) for the performance evaluation (MSE) in main_time_series_prediction.py file , following commands are important:
 - train_rate: training data ratio
 - seq_len: sequence length
-- task: classification or regression(MSE) or montecarlo_regression(MC_estimate)
+- task: classification or regression or montecarlo_regression(MC_estimate)
 - model_type: rnn, lstm or gru - In traffic prediction framework only gru is used.
 - h_dim: hidden state dimensions
 - n_layer: number of layers
