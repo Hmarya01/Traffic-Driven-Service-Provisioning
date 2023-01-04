@@ -4,44 +4,43 @@ In this work, we examine traffic prediction uncertainty  by leverging the capabi
 
 
 ## Python Script
+This directory contains implementations of basic traffic prediction using RNN, GRU, LSTM methods. To run the pipeline, simply run python3 -m main_time_series_prediction.py.
 
-## DNN Code Description
-It contains eight files, which are:
+  ## DNN Code Description
+  It contains eight files, which are:
 
-* **load_txt.py** This file contains the Python script and the code creates the Abilene/Geant csv file (i.e., bit-rates along with the source nodes).
+  * **data_loader.py** This file loads the Abilene/Geant bit-rate dataset and performs MinMax normalization.
 
-* **create_source_data.py** This file loads the bit-rates and generates the bit-rates in Gbps of all source nodes for Abilene/Geant.
+  * **data_laoder_abilene.py** This file generates the 800 for Abilene and 133 for Geant sequential (in time) traffic patterns and performs network reconfiguration k=6 fluctuations within each planning interval considering the input patterns.
 
-* **data_loader.py** This file loads the Abilene/Geant bit-rate dataset and performs MinMax normalization.
+  * **basic_rnn_lstm_gru.py** This files contains the MC dropout inference fucntion and prediction model to generates the MSE loss fucntion.
 
-* **data_laoder_abilene.py** This file generates the 800 for Abilene and 133 for Geant sequential (in time) traffic patterns and performs network reconfiguration k=6 fluctuations within each planning interval considering the input patterns.
+  * **main_time_series_prediction.py** This file generates the predictions for MSE and MC estimates for Monte Carlo dropout inference, 0.90 and 0.95 certainty           thresholds.  
 
-* **basic_rnn_lstm_gru.py** This files contains the MC dropout inference fucntion and prediction model to generates the MSE loss fucntion.
+  ## DNN Dataset
 
-* **main_time_series_prediction.py** This file generates the estimates (i.e., prediction and MC estimates) for 0.90 and 0.95 certainty thresholds.  
+  The dataset folder contains two subfolders are:
 
-* **basic_attenstion.py** This file contains all core functions.
+  ### Abilene  
+  This folder contains four files are:
+  * **source_data_abilene** This csv file contains the bit-rates in Gbps for all nodes.
+  * **source** This csv file contains all the source nodes.
 
-* **utils.py** This file contains all core functions i.e., mse_loss function, predictive model performance for evaluation.
+  ### Geant 
+  This folder contains four files are:
+  * **source_data_geant** This csv file contains the bit-rates in Gbps for all nodes.
+  * **source** This csv file contains all the source nodes.
 
-## DNN Dataset
+## Code Example
 
-The dataset folder contains two subfolders are:
-
-### Abilene  
-This folder contains four files are:
-* **output_abilene** This csv file contains the source and bit-rates for Abilene.
-* **source_data_abilene** This csv file contains the bit-rates in Gbps for all nodes.
-* **sourc**e This csv file contains all the source nodes.
-* **destination** This csv file contains all the destination nodes.
-
-### Geant 
-This folder contains four files are:
-* **output_geant** This csv file contains the source and bit-rates for Geant.
-* **source_data_geant** This csv file contains the bit-rates in Gbps for all nodes.
-* **source** This csv file contains all the source nodes.
-* **destination** This csv file contains all the destination nodes.
-
+## Steps of Traffic Prediction framework:
+**Step 1:** Load bit-rate dataset for Abilene/Geant network by simply running the *data_laoder.py*.
+     * **Abilene:** To load data (source_data_abilene), put range (0,4000) sequential (in time) traffic patterns.
+     * **Geant:** To load data (source_data_geant), put range (0,2000) sequential (in time) traffic patterns.0, 2000  sequential (in time) traffic patterns.
+     
+**Step 2:** Load bit-rate dataset per source node for Abilene/Geant network for testing and training by simply running the *data_laoder_abilene.py*.
+     * Abilene: 0,4000 sequential (in time) traffic patterns.
+     * Geant: 0, 2000  sequential (in time) traffic patterns.
 
 ## Referecence
 
