@@ -7,9 +7,7 @@ In this work, we examine traffic prediction uncertainty  by leverging the capabi
 This directory contains implementations of basic traffic prediction using RNN, GRU, LSTM methods. To run the pipeline, simply run python3 -m main_time_series_prediction.py.
 
   ## DNN Code Description
-  It contains five files, which are:
-
-  * **data_loader.py** This file loads the Abilene/Geant bit-rate dataset and performs MinMax normalization.
+  It contains four files, which are:
 
   * **data_laoder_abilene.py** This file generates the 800 for Abilene and 133 for Geant sequential (in time) traffic patterns and performs network reconfiguration k=6 fluctuations within each planning interval considering the input patterns.
 
@@ -37,15 +35,12 @@ This directory contains implementations of basic traffic prediction using RNN, G
 ## Code Example
 
 ## Steps of Traffic Prediction framework:
-**Step 1:** Load bit-rate dataset for Abilene/Geant network by simply running the data_laoder.py.
-* **Abilene** To load data (source_data_abilene), put range (0,4000) sequential (in time) traffic patterns.
-* **Geant:** To load data (source_data_geant), put range (0,2000) sequential (in time) traffic patterns.
-     
-**Step 2:** Load bit-rate dataset per source node for testing and training for Abilene/Geant network by simply running the data_laoder_abilene.py .
+
+**Step 1:** Load bit-rate dataset per source node for testing and training for Abilene/Geant network by simply running the data_laoder_abilene.py .
 * **Abilene:** To load data (source_data_abilene), put range (0,6*800) sequential (in time) traffic patterns.
 * **Geant:** To load data (source_data_geant), put range (0,6*133) sequential (in time) traffic patterns.
      
-**Step 3:** After laoding the data, to train the model (RNN based: Simple RNN, GRU, LSTM) for the performance evaluation (MSE) in main_time_series_prediction.py file , following commands are important:
+**Step 2:** After laoding the data, to train the model (RNN based: Simple RNN, GRU, LSTM) for the performance evaluation (MSE) in main_time_series_prediction.py file , following commands are important:
 - train_rate: training data ratio
 - seq_len: sequence length
 - task: classification or regression or montecarlo_regression(MC_estimate)
