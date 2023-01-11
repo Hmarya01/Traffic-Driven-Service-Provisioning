@@ -104,7 +104,7 @@ class GeneralRNN():
         
         
        if self.topology == 'abilene':
-            model.add(Dense(units=32))
+          # model.add(Dense(units=32))
             model.add(Dense(units=32))
             model.add(MonteCarloDropout(0.1))
             model.add(Dense(y.shape[-1])) 
